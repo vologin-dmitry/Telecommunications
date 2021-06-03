@@ -17,7 +17,7 @@ namespace ProxyServer
             TcpListener listener = null;
             try
             {
-                ThreadPool.SetMaxThreads(500, 250);
+                ThreadPool.SetMaxThreads( 500, 250);
                 ThreadPool.SetMinThreads(250, 125);
                 var port = 8080;
                 listener = new TcpListener(IPAddress.Any, 8080);
@@ -39,9 +39,9 @@ namespace ProxyServer
             }
         }
 
-        static void HandleSocket(object request)
+        static async void HandleSocket(object request)
         {
-            var buffer = new byte[8192];
+            var buffer = new byte[16384];
             int bytes;
             
             var socketClient = (Socket) request;
@@ -80,7 +80,7 @@ namespace ProxyServer
                                                            + Environment.NewLine);
                 clientWriter.Write(okResponse, 0, okResponse.Length);
                 clientWriter.Flush();
-
+                var i = 0;
                 while (socketClient.Connected && server.Connected &&
                        serverStream.CanRead && serverStream.CanWrite &&
                        clientStream.CanRead && clientStream.CanWrite)
@@ -91,6 +91,7 @@ namespace ProxyServer
                         bytes = clientReader.Read(buffer, 0, buffer.Length);
                         serverWriter.Write(buffer, 0, bytes);
                         Thread.Sleep(100);
+                        i = 0;
                     }
                     serverWriter.Flush();
                     while (serverStream.DataAvailable)
@@ -98,9 +99,15 @@ namespace ProxyServer
                         bytes = serverReader.Read(buffer, 0, buffer.Length);
                         clientWriter.Write(buffer, 0, bytes);
                         Thread.Sleep(100);
+                        i = 0;
                     }
                     clientWriter.Flush();
-
+                    if (i > 12)
+                    {
+                        /*socketClient.Close();
+                        server.Close();*/
+                    }
+                    ++i;
                 }
 
                 socketClient.Close();
@@ -112,7 +119,6 @@ namespace ProxyServer
                 try
                 {
                     server = new TcpClient(httpRequest.Host, httpRequest.Port);
-
                 }
                 catch (Exception e)
                 {
