@@ -12,18 +12,16 @@ namespace ProxyServer
         
         public HttpRequest(string data)
         {
-            if (data != "")
-            {
-                var lines = data.Split(Environment.NewLine);
+            if (data == "") return;
+            var lines = data.Split(Environment.NewLine);
 
-                var firstLine = data.Split(' ');
-                Method = firstLine[0];
-                var hostLine = Array.Find(lines,
-                    str => str.ToLower().StartsWith("host:"));
-                var hostLineArgs = hostLine?.Replace(" ", "")?.Split(':');
-                Host = hostLineArgs?[1];
-                Port = hostLineArgs is {Length: 3} ? Port = int.Parse(hostLineArgs[2]) : 80;
-            }
+            var firstLine = data.Split(' ');
+            Method = firstLine[0];
+            var hostLine = Array.Find(lines,
+                str => str.ToLower().StartsWith("host:"));
+            var hostLineArgs = hostLine?.Replace(" ", "")?.Split(':');
+            Host = hostLineArgs?[1];
+            Port = hostLineArgs is {Length: 3} ? Port = int.Parse(hostLineArgs[2]) : 80;
         }
     }
 }

@@ -19,9 +19,10 @@ namespace ProxyServer
             {
                 ThreadPool.SetMaxThreads(500, 250);
                 ThreadPool.SetMinThreads(250, 125);
+                var port = 8080;
                 listener = new TcpListener(IPAddress.Any, 8080);
                 listener.Start();
-                WriteLine("Server is running. Waiting for requests");
+                WriteLine("Server is running. Waiting for requests on port " + port);
                 while (true)
                 {
                     var request = await listener.AcceptSocketAsync();
@@ -90,7 +91,6 @@ namespace ProxyServer
                         bytes = clientReader.Read(buffer, 0, buffer.Length);
                         serverWriter.Write(buffer, 0, bytes);
                         Thread.Sleep(100);
-                        WriteLine(bytes + " bytes from client");
                     }
                     serverWriter.Flush();
                     while (serverStream.DataAvailable)
@@ -98,7 +98,6 @@ namespace ProxyServer
                         bytes = serverReader.Read(buffer, 0, buffer.Length);
                         clientWriter.Write(buffer, 0, bytes);
                         Thread.Sleep(100);
-                        WriteLine(bytes + " bytes from server");
                     }
                     clientWriter.Flush();
 
