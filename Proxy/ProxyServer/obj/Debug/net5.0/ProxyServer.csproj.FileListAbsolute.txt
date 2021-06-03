@@ -1,0 +1,16 @@
+C:\Users\dmitry\RiderProjects\Telecommunications\Proxy\ProxyServer\bin\Debug\net5.0\ProxyServer.exe
+C:\Users\dmitry\RiderProjects\Telecommunications\Proxy\ProxyServer\bin\Debug\net5.0\ProxyServer.deps.json
+C:\Users\dmitry\RiderProjects\Telecommunications\Proxy\ProxyServer\bin\Debug\net5.0\ProxyServer.runtimeconfig.json
+C:\Users\dmitry\RiderProjects\Telecommunications\Proxy\ProxyServer\bin\Debug\net5.0\ProxyServer.runtimeconfig.dev.json
+C:\Users\dmitry\RiderProjects\Telecommunications\Proxy\ProxyServer\bin\Debug\net5.0\ProxyServer.dll
+C:\Users\dmitry\RiderProjects\Telecommunications\Proxy\ProxyServer\bin\Debug\net5.0\ref\ProxyServer.dll
+C:\Users\dmitry\RiderProjects\Telecommunications\Proxy\ProxyServer\bin\Debug\net5.0\ProxyServer.pdb
+C:\Users\dmitry\RiderProjects\Telecommunications\Proxy\ProxyServer\obj\Debug\net5.0\ProxyServer.csprojAssemblyReference.cache
+C:\Users\dmitry\RiderProjects\Telecommunications\Proxy\ProxyServer\obj\Debug\net5.0\ProxyServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dmitry\RiderProjects\Telecommunications\Proxy\ProxyServer\obj\Debug\net5.0\ProxyServer.AssemblyInfoInputs.cache
+C:\Users\dmitry\RiderProjects\Telecommunications\Proxy\ProxyServer\obj\Debug\net5.0\ProxyServer.AssemblyInfo.cs
+C:\Users\dmitry\RiderProjects\Telecommunications\Proxy\ProxyServer\obj\Debug\net5.0\ProxyServer.csproj.CoreCompileInputs.cache
+C:\Users\dmitry\RiderProjects\Telecommunications\Proxy\ProxyServer\obj\Debug\net5.0\ProxyServer.dll
+C:\Users\dmitry\RiderProjects\Telecommunications\Proxy\ProxyServer\obj\Debug\net5.0\ref\ProxyServer.dll
+C:\Users\dmitry\RiderProjects\Telecommunications\Proxy\ProxyServer\obj\Debug\net5.0\ProxyServer.pdb
+C:\Users\dmitry\RiderProjects\Telecommunications\Proxy\ProxyServer\obj\Debug\net5.0\ProxyServer.genruntimeconfig.cache

@@ -1,0 +1,16 @@
+C:\Users\dmitry\RiderProjects\Telecommunications\DNS-Resolver\DNS-Resolver\bin\Debug\net5.0\DNS-Resolver.exe
+C:\Users\dmitry\RiderProjects\Telecommunications\DNS-Resolver\DNS-Resolver\bin\Debug\net5.0\DNS-Resolver.deps.json
+C:\Users\dmitry\RiderProjects\Telecommunications\DNS-Resolver\DNS-Resolver\bin\Debug\net5.0\DNS-Resolver.runtimeconfig.json
+C:\Users\dmitry\RiderProjects\Telecommunications\DNS-Resolver\DNS-Resolver\bin\Debug\net5.0\DNS-Resolver.runtimeconfig.dev.json
+C:\Users\dmitry\RiderProjects\Telecommunications\DNS-Resolver\DNS-Resolver\bin\Debug\net5.0\DNS-Resolver.dll
+C:\Users\dmitry\RiderProjects\Telecommunications\DNS-Resolver\DNS-Resolver\bin\Debug\net5.0\ref\DNS-Resolver.dll
+C:\Users\dmitry\RiderProjects\Telecommunications\DNS-Resolver\DNS-Resolver\bin\Debug\net5.0\DNS-Resolver.pdb
+C:\Users\dmitry\RiderProjects\Telecommunications\DNS-Resolver\DNS-Resolver\obj\Debug\net5.0\DNS-Resolver.csprojAssemblyReference.cache
+C:\Users\dmitry\RiderProjects\Telecommunications\DNS-Resolver\DNS-Resolver\obj\Debug\net5.0\DNS-Resolver.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dmitry\RiderProjects\Telecommunications\DNS-Resolver\DNS-Resolver\obj\Debug\net5.0\DNS-Resolver.AssemblyInfoInputs.cache
+C:\Users\dmitry\RiderProjects\Telecommunications\DNS-Resolver\DNS-Resolver\obj\Debug\net5.0\DNS-Resolver.AssemblyInfo.cs
+C:\Users\dmitry\RiderProjects\Telecommunications\DNS-Resolver\DNS-Resolver\obj\Debug\net5.0\DNS-Resolver.csproj.CoreCompileInputs.cache
+C:\Users\dmitry\RiderProjects\Telecommunications\DNS-Resolver\DNS-Resolver\obj\Debug\net5.0\DNS-Resolver.dll
+C:\Users\dmitry\RiderProjects\Telecommunications\DNS-Resolver\DNS-Resolver\obj\Debug\net5.0\ref\DNS-Resolver.dll
+C:\Users\dmitry\RiderProjects\Telecommunications\DNS-Resolver\DNS-Resolver\obj\Debug\net5.0\DNS-Resolver.pdb
+C:\Users\dmitry\RiderProjects\Telecommunications\DNS-Resolver\DNS-Resolver\obj\Debug\net5.0\DNS-Resolver.genruntimeconfig.cache
