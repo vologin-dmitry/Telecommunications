@@ -1,0 +1,13 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/modules.xml
+/projectSettingsUpdater.xml
+/.idea.ProxyServer.iml
+/contentModel.xml
+# Datasource local storage ignored files
+/../../../../../../../../../:\Users\dmitry\RiderProjects\Telecommunications\Proxy\.idea\.idea.ProxyServer\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
