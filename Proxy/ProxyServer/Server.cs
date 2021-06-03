@@ -17,8 +17,8 @@ namespace ProxyServer
             TcpListener listener = null;
             try
             {
-                ThreadPool.SetMaxThreads( 500, 250);
-                ThreadPool.SetMinThreads(250, 125);
+                ThreadPool.SetMaxThreads( 250, 125);
+                ThreadPool.SetMinThreads(125, 65);
                 var port = 8080;
                 listener = new TcpListener(IPAddress.Any, 8080);
                 listener.Start();
@@ -87,12 +87,12 @@ namespace ProxyServer
                 {
                     while (clientStream.DataAvailable)
                     {
-                        Thread.Sleep(200);
                         bytes = clientReader.Read(buffer, 0, buffer.Length);
                         serverWriter.Write(buffer, 0, bytes);
                         Thread.Sleep(100);
                         i = 0;
                     }
+                    Thread.Sleep(200);
                     serverWriter.Flush();
                     while (serverStream.DataAvailable)
                     {
