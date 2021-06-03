@@ -102,10 +102,9 @@ namespace ProxyServer
                         i = 0;
                     }
                     clientWriter.Flush();
-                    if (i > 12)
+                    if (i > 25)
                     {
-                        /*socketClient.Close();
-                        server.Close();*/
+                        break;
                     }
                     ++i;
                 }
